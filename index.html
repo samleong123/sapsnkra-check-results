@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<link href="./content/css/heroes.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAPS Results Check Alternative Site</title>
+</head>
+<body>
+<div class="px-4 py-5 my-5 text-center"> <h1 class="display-5 fw-bold">SAPS Results Check Alternative Site</h1>  </br>
+<h2 class="lead mb-4"><strong>THIS SITE IS STILL UNDER BETA STAGE!</strong> </br> Follow the instructions and input your details , including your school code and class name with <strong>FULL CAPITAL LETTERS</strong>. </br> For example :  </br> Your school is <strong>SMK Tropicana</strong> , you are currently studying in <strong>Form 4 Ara</strong> , you wanted to check your <strong>final exam results (Peperiksaan Akhir Tahun)</strong>. </br> You should input : <strong></br> School code : BEA8640 </br> Class name : ARA </br> Form name : T4 </br> Exam Type : PAT</strong></h2>
+
+        
+        <form class="p-4 p-md-5 border rounded-3 bg-light"id="signup-form" method="post" action="https://sapsnkra.moe.gov.my/ibubapa2/slipmr.php">
+          <div class="form-floating mb-3">
+            <input type="nokp" class="form-control" name="nokp" id="nokp" placeholder="Your NRIC number without dash">
+            <label for="floatingInput">Your NRIC number without dash</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="kodsek" class="form-control" name="kodsek" id="kodsek" placeholder="Your school code">
+            <label for="floatingPassword">Your school code</label>
+          </div>
+		   <div class="form-floating mb-3">
+            <input type="ting" class="form-control" name="ting" id="ting" placeholder="Your form name">
+            <label for="floatingPassword">Your form</label>
+          </div>
+		     <div class="form-floating mb-3">
+            <input type="kelas" class="form-control" name="kelas" id="kelas" placeholder="Your class name">
+            <label for="floatingPassword">Your class name</label>
+          </div>
+		      <div class="form-floating mb-3">
+            <input type="cboPep" class="form-control" name="cboPep" id="cboPep" placeholder="Your exam type">
+            <label for="floatingPassword">Your exam type</label>
+          </div>
+          <button type="submit" class="w-100 btn btn-lg btn-primary"  id="btn-submit">Check now</button>
+          <hr class="my-4">
+          <small class="text-muted">By clicking Check now, you agree to the terms of use.</small>
+        </form>
+ 
+	  
+
+
+
+	</body>
+	</html>
