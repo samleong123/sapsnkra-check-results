@@ -11,10 +11,10 @@
 </head>
 <body>
 <div class="px-4 py-5 my-5 text-center"> <h1 class="display-5 fw-bold">SAPS Results Check Alternative Site</h1>  </br>
-<h2 class="lead mb-4"><strong>THIS SITE IS STILL UNDER BETA STAGE!</strong> </br> Follow the instructions and input your details , including your school code and class name with <strong>FULL CAPITAL LETTERS</strong>. </br> For example :  </br> Your school is <strong>SMK Tropicana</strong> , you are currently studying in <strong>Form 4 Ara</strong> , you wanted to check your <strong>final exam results (Peperiksaan Akhir Tahun)</strong>. </br> You should input : <strong></br> School code : BEA8640 </br> Class name : ARA </br> Form name : T4 </br> Exam Type : PAT</strong></h2>
+<h2 class="lead mb-4"><strong>This site is under BETA!</strong> </h2> <p> Follow the instructions and input your details , including your school code and class name with <strong>FULL CAPITAL LETTERS</strong>. </br> For example :  </br> Your school is <strong>SMK Bandar Sri Damansara 2</strong> , you are currently studying in <strong>Form 5 Ara</strong> , you wanted to check your <strong>trial SPM results (Percubaan Peperiksaan SPM)</strong>. </br> You should input : <strong></br> School code : BEA8641 </br> Class name : ARA </br> Form name : T5 </br> Exam Type : Trial SPM</strong></h2>
 
         
-        <form class="p-4 p-md-5 border rounded-3 bg-light"id="signup-form" method="post" action="https://sapsnkra.moe.gov.my/ibubapa2/slipmr.php">
+        <form class="p-4 p-md-5 border rounded-3 bg-light"id="signup-form" method="post" action="./result.php">
           <div class="form-floating mb-3">
             <input type="nokp" class="form-control" name="nokp" id="nokp" placeholder="Your NRIC number without dash">
             <label for="floatingInput">Your NRIC number without dash</label>
@@ -32,8 +32,14 @@
             <label for="floatingPassword">Your class name</label>
           </div>
 		      <div class="form-floating mb-3">
-            <input type="cboPep" class="form-control" name="cboPep" id="cboPep" placeholder="Your exam type">
-            <label for="floatingPassword">Your exam type</label>
+			  <select type="cboPep" name="cboPep" id="cboPep"class="form-select" aria-label="Your exam type">
+  <option selected>Open this menu to choose</option>
+  <option value="SPMC">Trial SPM / Peperiksaan Percubaan SPM</option>
+  <option value="PAT">Peperiksaan Akhir Tahun</option>
+  <option value="PPT">Peperiksaan Pertengahan Tahun</option>
+</select>
+        
+            <label for="floatingPassword">Choose your exam type</label>
           </div>
           <button type="submit" class="w-100 btn btn-lg btn-primary"  id="btn-submit">Check now</button>
           <hr class="my-4">
